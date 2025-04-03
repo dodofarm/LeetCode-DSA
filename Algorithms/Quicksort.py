@@ -11,7 +11,7 @@ def quicksort(input: [int]) -> [int]:
             pointer += 1
 
     arr[-1], arr[pointer] = arr[pointer], arr[-1]  # swap pointer with pivot
-    # sort again parts before and after pivor
+    # sort again parts before and after pivot
     return quicksort(arr[:pointer]) + [arr[pointer]] + quicksort(arr[pointer + 1 :])
 
 
