@@ -35,8 +35,28 @@ class Solution_two:
 
 
 # @leet start
+# Bucket Sort solution - best performance!
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int] | False:
+        frequency: dict[int, int] = defaultdict(int)
+        for i in nums:
+            frequency[i] += 1
 
-# class Solution:
-#     def topKFrequent
+        buckets: List[List[int]] = [[] for i in range(len(nums) + 1)]
+
+        for num, count in frequency.items():
+            buckets[count].append(num)
+
+        ans: List[int] = []
+
+        for i in range(len(buckets) - 1, 0, -1):
+            for j in buckets[i]:
+                ans.append(j)
+                k -= 1
+                if k == 0:
+                    return ans
+
+        return False
+
 
 # @leet end
