@@ -1,18 +1,29 @@
-def quicksort(input: [int]) -> [int]:
-    arr = input.copy()
-    if len(arr) <= 1:
-        return arr
-    pivot = arr[-1]
-    pointer = 0
-    for i in range(len(arr) - 1):
-        if arr[i] < pivot:
-            # if pointer != i:
-            arr[i], arr[pointer] = arr[pointer], arr[i]
-            pointer += 1
+from typing import List
 
-    arr[-1], arr[pointer] = arr[pointer], arr[-1]  # swap pointer with pivot
-    # sort again parts before and after pivot
-    return quicksort(arr[:pointer]) + [arr[pointer]] + quicksort(arr[pointer + 1 :])
+
+def quicksort(input_arr: List[int]) -> [int]:
+    arr = input_arr.copy()
+
+    def _quicksort(low, high) -> [int]:
+        def partition(low, high) -> [int]:
+            pivot = arr[high]
+            pointer = low
+            for i in range(low, high):
+                if arr[i] < pivot:
+                    if i != pointer:
+                        arr[i], arr[pointer] = arr[pointer], arr[i]
+                    pointer += 1
+
+            arr[pointer], arr[high] = arr[high], arr[pointer]
+            return pointer
+
+        if low < high:
+            pivot = partition(low, high)
+            _quicksort(low, pivot - 1)
+            _quicksort(pivot + 1, high)
+
+    _quicksort(0, len(arr) - 1)
+    return arr
 
 
 test_array = [2, 1, 7, 4, 9, 3, 7, 3, 5, 1, 6]

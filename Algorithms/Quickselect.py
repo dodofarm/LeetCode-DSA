@@ -1,5 +1,5 @@
-def quickselect(input: [int], k) -> int:
-    arr = input.copy()
+def quickselect(input_arr: [int], k) -> int:
+    arr = input_arr.copy()
 
     def partition(start, end, k) -> int:
         pivot = end
@@ -12,7 +12,7 @@ def quickselect(input: [int], k) -> int:
 
         arr[pointer], arr[pivot] = arr[pivot], arr[pointer]
 
-        if pointer > k:
+        if pointer > k:  # pylint: disable=no-else-return
             return partition(start, pointer - 1, k)
         elif pointer < k:
             return partition(pointer + 1, end, k)
