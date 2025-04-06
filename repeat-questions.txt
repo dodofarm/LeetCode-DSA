@@ -1,0 +1,7 @@
+169.majority-element.py - use one var to find most often occuring element
+1540.can-convert-string-in-k-moves.py - String conversion
+215.kth-largest-element-in-an-array.py - Quickselect practice, optional max heap or just sort
+283.move-zeroes.py - inplace editing of array
+344.reverse-string.py - simple but just repeat it
+347.top-k-frequent-elements.py - Bucket Sort, find highest frequency
+49.group-anagrams.py - never done properly... 

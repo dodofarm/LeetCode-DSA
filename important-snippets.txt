@@ -1,0 +1,6 @@
+frequency = defaultdict(int)
+for i in nums:
+   frequency[i] += 1
+freq = [(-a, b) for b, a in frequency] 
+# In this example setting -a to invert the value of a to later use the minheap as a maxheap
+# obv this requires you to convert the negative number back to positive when you pop from heap
