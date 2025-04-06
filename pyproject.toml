@@ -1,0 +1,10 @@
+[tool.pylint.messages_control]
+disable = ["missing-class-docstring", "missing-module-docstring", "too-few-public-methods", "missing-function-docstring"]
+
+[tool.pylint.format]
+# Allow any naming pattern for functions and classes
+function-rgx = ".*"
+method-rgx = ".*"
+module-rgx = ".*"
+class-rgx = ".*"
+# Default patterns for other name types will remain in effect
