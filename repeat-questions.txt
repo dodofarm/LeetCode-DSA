@@ -5,3 +5,6 @@
 344.reverse-string.py - simple but just repeat it
 347.top-k-frequent-elements.py - Bucket Sort, find highest frequency
 49.group-anagrams.py - never done properly... 
+22.valid-parentheses.py - done but can be a bit more prettier using a diff structure...
+155.min-stack.py - remember CORE idea about how stack works! - ez problem otherwise
+125.valid-palindrome.py - think about how you DON'T have to move both pointers before comparing, you can do so 1 by 1!
