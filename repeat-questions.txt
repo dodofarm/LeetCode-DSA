@@ -8,3 +8,10 @@
 22.valid-parentheses.py - done but can be a bit more prettier using a diff structure...
 155.min-stack.py - remember CORE idea about how stack works! - ez problem otherwise
 125.valid-palindrome.py - think about how you DON'T have to move both pointers before comparing, you can do so 1 by 1!
+205.isomorphic-strings.py - Understand the constraints of the problem, what requirements need to be fulfilled to return?
+206.reverse-linked-list.py - Only solved with hint, try again! Need multiple variables not just 2
+219.contains-duplicate-ii.py - Solved but not optimal think of which TECHNIQUE to use, hashmap is only part of it
+15.3sum.py - didn't solve this one, think of 2sum and 2sum II
+
+Done:
+167.two-sum-ii-input-array-is-sorted.py - actually solved without problems, might retry to refresh
