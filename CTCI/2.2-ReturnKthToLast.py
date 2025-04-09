@@ -14,15 +14,14 @@ def nth_element_print(head: Node, k: int) -> int:
     if k == node_num:
         print(head)
         return node_num + 1
-    else:
-        return node_num + 1
+    return node_num + 2
 
 
 def nth_element_two_pointer(head: Node, k: int) -> Node:
     p1 = head
     p2 = head
 
-    for i in range(k):
+    for _ in range(k):
         p2 = p2.next
 
     while p2:
