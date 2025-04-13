@@ -8,26 +8,25 @@ class ListNode:
         self.next = next
 
 
-# Better and correct because whle lioop goes till last node! Also easier for type checker
-# class Solution:
-#     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-#         if not head:
-#             return None
-#
-#         prev = None
-#         current = head
-#
-#         while current:
-#             next_node = current.next
-#             current.next = prev
-#             prev = current
-#             current = next_node
-#
-#         return prev  # prev becomes the new head
+# Better because while loop goes till last node! Also easier for type checker
+class Solution_one:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head:
+            return None
+
+        prev = None
+        current = head
+
+        while current:
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
+
+        return prev  # prev becomes the new head
 
 
-# @leet start
-class Solution:
+class Solution_two:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head:
             return None
@@ -42,5 +41,20 @@ class Solution:
         return head
 
 
-# @leet end
+# @leet start
 
+
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        prev = None
+        current = head
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+
+        return prev
+
+
+# @leet end

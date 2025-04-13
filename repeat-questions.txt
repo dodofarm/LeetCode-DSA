@@ -5,7 +5,6 @@
 347.top-k-frequent-elements.py - Bucket Sort, find highest frequency
 49.group-anagrams.py - never done properly... 
 125.valid-palindrome.py - think about how you DON'T have to move both pointers before comparing, you can do so 1 by 1!
-206.reverse-linked-list.py - Only solved with hint, try again! Need multiple variables not just 2
 219.contains-duplicate-ii.py - Solved but not optimal think of which TECHNIQUE to use, hashmap is only part of it
 15.3sum.py - didn't solve this one, think of 2sum and 2sum II
 567.permutation-in-string.py - got non-linear time solution, keep in mind exactly HOW sliding windows work (pop, add per move)
@@ -17,6 +16,7 @@ Done:
 20.valid-parentheses.py - done on second try, might repeat since there is a nice concept on how to compare values
 155.min-stack.py - done, remember CORE idea about how stack works! think of how to store the min value for the current element
 167.two-sum-ii-input-array-is-sorted.py - actually solved without problems, might retry to refresh
+206.reverse-linked-list.py - Solved on second try (remember to use multiple vars, not one!) maybe as training to recursive solution
 344.reverse-string.py - done, not really worth repeating unless for basic techniques
 438.find-all-anagrams-in-a-string.py - done on first try - very similar to 567, maybe repeat with better implementation.
 643.maximum-average-subarray-i.py - done on first try - maybe repeat to solidify static size sliding window
