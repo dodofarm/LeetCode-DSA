@@ -1,8 +1,7 @@
 from typing import List
 
 
-# @leet start
-class Solution:
+class Solution_one:
     def isValid(self, s: str) -> bool:
         stack: List[str] = []
         for i in s:
@@ -21,6 +20,31 @@ class Solution:
                     return False
 
         return not stack
+
+
+# @leet start
+
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        if len(s) < 2:
+            return False
+        mapping: dict[str, str] = {
+            ")": "(",
+            "]": "[",
+            "}": "{",
+        }
+
+        stack: List[str] = []
+
+        for i in s:
+            if i in (")", "]", "}"):
+                if len(stack) == 0 or mapping[i] != stack.pop():
+                    return False
+            else:
+                stack.append(i)
+
+        return bool(not stack)
 
 
 # @leet end

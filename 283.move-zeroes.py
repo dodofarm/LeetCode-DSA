@@ -1,7 +1,7 @@
 from typing import List
 
 
-# Not as good because popping and appending is more expensive than swapping the elements
+# Not as good because popping and appending is more expensive than swapping the elements letting the 0s bubble up
 class Solution_one:
     def moveZeroes(self, nums: List[int]) -> None:
         """
@@ -23,12 +23,10 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         j = 0
-        i = 0
-        for i in range(len(nums)):
+        for i, _ in enumerate(nums):
             if nums[i] != 0:
                 nums[i], nums[j] = nums[j], nums[i]
                 j += 1
 
 
 # @leet end
-

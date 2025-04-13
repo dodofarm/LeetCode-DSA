@@ -14,7 +14,6 @@ class Solution_one:
         return heapq.heappop(freq)[1]
 
 
-# Simpler Solution but still creates a dict with all values in the array as keys
 class Solution_two:
     def majorityElement(self, nums: List[int]) -> int:
         count: dict[int, int] = defaultdict(int)
@@ -45,4 +44,3 @@ class Solution:
 
 
 # @leet end
-

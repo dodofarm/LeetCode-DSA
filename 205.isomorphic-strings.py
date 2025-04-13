@@ -2,8 +2,7 @@ from collections import defaultdict
 from typing import List
 
 
-# @leet start
-class Solution:
+class Solution_two:
     def isIsomorphic(self, s: str, t: str) -> bool:
         def fill_dict_with_frequency(dictionary: dict[str, int], string: str) -> None:
             for i in string:
@@ -43,5 +42,25 @@ class Solution:
         return True
 
 
-# @leet end
+# @leet start
 
+
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        map_one: dict[str, str] = {}
+        map_two: dict[str, str] = {}
+
+        # for i, _ in enumerate(s):
+        for val1, val2 in zip(s, t):
+            if val1 in map_one and map_one[val1] != val2:
+                return False
+            map_one[val1] = val2
+
+            if val2 in map_two and map_two[val2] != val1:
+                return False
+            map_two[val2] = val1
+
+        return True
+
+
+# @leet end
