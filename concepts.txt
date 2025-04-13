@@ -1,0 +1,16 @@
+General:
+  you most likely don't need to do every operation on every step (e.g. calculate avg) you can do it ONCE at the end. If you need to for exmaple compare averages just compare the max values and caclulate the avg at the end
+Sliding window:
+  you might need to fill up the window first!
+  if the window size is constant, simply have 1 pointer that's the end of the window and do end of window - size the of the window = beginning of window. Now just use a for loop instead of a while loop.
+  for a window where both the start and end just moved you don't need to REDO whatever you do that happens on a window move, you need to ONLY REMOVE the previous value that left the window and ADD the last values that came into the window.
+
+Quicksort/Quickselect:
+  always pay attention to use the actual value in the array in calculations instead of the index
+
+Bucket Sort:
+  useful for finding highest (or kth highest frequency in array)
+
+Linked List:
+  need THREE pointers to reverse it
+
