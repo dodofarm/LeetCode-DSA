@@ -13,6 +13,8 @@ repeate one more time:
 205.isomorphic-strings.py - solved once with hint, you need to compare one string with the other AND vice versa
 
 Done:
+2.add-two-numbers.py - done but not good time and non-efficiencies in code - think how you can write cleaner/smarter and shorter, remove unnessecary lines
+19.remove-nth-node-from-end-of-list.py - done but code might want some optimizations (unnessecary None checks etc.)
 20.valid-parentheses.py - done on second try, might repeat since there is a nice concept on how to compare values
 155.min-stack.py - done, remember CORE idea about how stack works! think of how to store the min value for the current element
 167.two-sum-ii-input-array-is-sorted.py - actually solved without problems, might retry to refresh
