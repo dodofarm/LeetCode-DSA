@@ -22,5 +22,6 @@ Done:
 167.two-sum-ii-input-array-is-sorted.py - actually solved without problems, might retry to refresh
 206.reverse-linked-list.py - Solved on second try (remember to use multiple vars, not one!) maybe as training to recursive solution
 344.reverse-string.py - done, not really worth repeating unless for basic techniques
-438.find-all-anagrams-in-a-string.py - done on first try - very similar to 567, maybe repeat with better implementation.
+438.find-all-anagrams-in-a-string.py - done on first try - very similar to 567, maybe repeat with better implementation
 643.maximum-average-subarray-i.py - done on first try - maybe repeat to solidify static size sliding window
+704.binary-search.py - done, maybe repeat to practice binary search but other problems probably are enough for that
