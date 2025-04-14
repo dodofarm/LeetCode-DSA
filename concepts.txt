@@ -15,3 +15,5 @@ Linked List:
   need THREE pointers to reverse it
   VERY often a dummy node is good! You can use it as a placeholder when you build a list to the retun dummy.next (e.g. problem 2)
 
+Stack:
+  think about the ORDER of how items get placed on the stack. Also think about how you can store items temporary where the order should stay the same (see 150)
