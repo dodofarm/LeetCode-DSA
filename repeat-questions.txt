@@ -10,6 +10,8 @@
 567.permutation-in-string.py - got non-linear time solution, keep in mind exactly HOW sliding windows work (pop, add per move)
 
 repeate one more time:
+121.best-time-to-buy-and-sell-stock.py - done with hint, simple question - understand what you are measuring and which simple comparison you need
+150.evaluate-reverse-polish-notation.py - done but the technique how and when to order numbers to stack should be revised
 205.isomorphic-strings.py - solved once with hint, you need to compare one string with the other AND vice versa
 
 Done:
