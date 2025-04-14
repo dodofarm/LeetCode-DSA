@@ -7,23 +7,18 @@ class Solution:
         stack: List[int] = []
 
         for i in tokens:
-            tmp = i[1:] if i[0] == "-" else i
-            if tmp.isnumeric():
-                stack.append(int(i))
+            if i == "+":
+                stack.append(stack.pop() + stack.pop())
+            elif i == "-":
+                a, b = stack.pop(), stack.pop()
+                stack.append(b - a)
+            elif i == "*":
+                stack.append(stack.pop() * stack.pop())
+            elif i == "/":
+                a, b = stack.pop(), stack.pop()
+                stack.append(int(b / a))
             else:
-                a = stack.pop()
-                b = stack.pop()
-
-                if i == "+":
-                    stack.append(b + a)
-
-                if i == "-":
-                    stack.append(b - a)
-
-                if i == "*":
-                    stack.append(b * a)
-                if i == "/":
-                    stack.append(int(b / a))
+                stack.append(int(i))
 
         return stack[0]
 
