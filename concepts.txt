@@ -1,5 +1,6 @@
 General:
   you most likely don't need to do every operation on every step (e.g. calculate avg) you can do it ONCE at the end. If you need to for exmaple compare averages just compare the max values and caclulate the avg at the end
+  when optimizing at the end, think about how to move out the logic that checks only one small thing out of the while/for loop and just have a simple if condition at the end
 Sliding window:
   you might need to fill up the window first!
   if the window size is constant, simply have 1 pointer that's the end of the window and do end of window - size the of the window = beginning of window. Now just use a for loop instead of a while loop.
@@ -17,3 +18,7 @@ Linked List:
 
 Stack:
   think about the ORDER of how items get placed on the stack. Also think about how you can store items temporary where the order should stay the same (see 150)
+
+Recursion:
+  Build from the bottom up, instea of passing down a parameter to the lower functions, this is much simpler. E.g. the last call stack return 1, the one before 2 etc. It would look like `return this_funciton() + 1`
+  https://www.perplexity.ai/search/def-maxdepth-node-treenode-ans-8OlebG6VTg2M292p36Ywmg

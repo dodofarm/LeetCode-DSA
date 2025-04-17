@@ -11,13 +11,18 @@
 
 repeate one more time:
 121.best-time-to-buy-and-sell-stock.py - done with hint, simple question - understand what you are measuring and which simple comparison you need
+104.maximum-depth-of-binary-tree.py - figured out but technique was a bit too complex, try again this time simpler, no need for helper functions or while loops even
 150.evaluate-reverse-polish-notation.py - done but the technique how and when to order numbers to stack should be revised
 205.isomorphic-strings.py - solved once with hint, you need to compare one string with the other AND vice versa
+226.invert-binary-tree.py - same as 104, figured out technique but maybe no need for helper function? Just call the main function.
 
 Done:
 2.add-two-numbers.py - done but not good time and non-efficiencies in code - think how you can write cleaner/smarter and shorter, remove unnessecary lines
 19.remove-nth-node-from-end-of-list.py - done but code might want some optimizations (unnessecary None checks etc.)
 20.valid-parentheses.py - done on second try, might repeat since there is a nice concept on how to compare values
+21.merge-two-sorted-lists.py - done, maybe repeat for understanding
+74.search-a-2d-matrix.py - done with no issues, maybe repeat for understanding of binary search application?
+102.binary-tree-level-order-traversal.py - done with little to no issues, maybe repeat to understand some logic stuff. When should which condition be checked?
 155.min-stack.py - done, remember CORE idea about how stack works! think of how to store the min value for the current element
 167.two-sum-ii-input-array-is-sorted.py - actually solved without problems, might retry to refresh
 206.reverse-linked-list.py - Solved on second try (remember to use multiple vars, not one!) maybe as training to recursive solution
