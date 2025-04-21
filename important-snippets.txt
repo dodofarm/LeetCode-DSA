@@ -1,6 +1,26 @@
+# In this example setting -a to invert the value of a to later use the minheap as a maxheap
+# obv this requires you to convert the negative number back to positive when you pop from heap
+
 frequency = defaultdict(int)
 for i in nums:
    frequency[i] += 1
 freq = [(-a, b) for b, a in frequency] 
-# In this example setting -a to invert the value of a to later use the minheap as a maxheap
-# obv this requires you to convert the negative number back to positive when you pop from heap
+
+# When you use * before a list in the context of a function call, it unpacks the list elements and passes them as separate positional arguments to the function. Unpack operator.
+# print(*test, sep=",+")  # Changes the default space separator from ' ' to ',+'
+test = ["BOOM", "HEY"]
+print(*test)
+> BOOM HEY
+print(test)
+> ['BOOM', 'HEY']
+
+# can be very useful if the whole alphabet is required for some reason
+import string
+string.ascii_uppercase
+> 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+string.ascii_lowercase
+> 'abcdefghijklmnopqrstuvwxyz'
+string.digits
+> '0123456789'
+string.hexdigits
+> '0123456789abcdefABCDEF'
