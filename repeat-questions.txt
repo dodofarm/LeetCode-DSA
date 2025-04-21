@@ -13,7 +13,6 @@ repeate one more time:
 121.best-time-to-buy-and-sell-stock.py - done with hint, simple question - understand what you are measuring and which simple comparison you need
 143.reorder-list.py - got it but pretty ineffiecient, think of the easiest way to find the middle of a linked list, think of another problem where you found kth element counted from the end
 150.evaluate-reverse-polish-notation.py - done but the technique how and when to order numbers to stack should be revised
-199.binary-tree-right-side-view.py - done with the same solution as in 102 (recursive) - redo with BFS
 205.isomorphic-strings.py - solved once with hint, you need to compare one string with the other AND vice versa
 226.invert-binary-tree.py - same as 104, figured out technique but maybe no need for helper function? Just call the main function.
 
@@ -27,6 +26,7 @@ Done:
 104.maximum-depth-of-binary-tree.py - done with recursive DFS and stack DFS, redo stack solution potentially to solidify stack technique
 155.min-stack.py - done, remember CORE idea about how stack works! think of how to store the min value for the current element
 167.two-sum-ii-input-array-is-sorted.py - actually solved without problems, might retry to refresh
+199.binary-tree-right-side-view.py - done with custom recursive solution as in 102 (recursive) - also now redone with BFS + deque
 206.reverse-linked-list.py - Solved on second try (remember to use multiple vars, not one!) maybe as training to recursive solution
 344.reverse-string.py - done, not really worth repeating unless for basic techniques
 438.find-all-anagrams-in-a-string.py - done on first try - very similar to 567, maybe repeat with better implementation
