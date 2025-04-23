@@ -1,4 +1,5 @@
 169.majority-element.py - Boyer Moore Algorithm, voting
+151.reverse-words-in-a-string.py - never done/understood fully
 1540.can-convert-string-in-k-moves.py - String conversion
 215.kth-largest-element-in-an-array.py - Quickselect practice, optional max heap or just sort
 283.move-zeroes.py - Think about how to partition the array, what needs to be at the beginning? Maybe move it there
@@ -10,6 +11,8 @@
 567.permutation-in-string.py - got non-linear time solution, keep in mind exactly HOW sliding windows work (pop, add per move)
 
 repeate one more time:
+3.longest-substring-without-repeating-characters.py - done but took too long and had unnessecary code (not optimized)
+98.validate-binary-search-tree.py - solved with a tip, try again. If you've found the conditions for a BST, try to simplify them to something managable
 121.best-time-to-buy-and-sell-stock.py - done with hint, simple question - understand what you are measuring and which simple comparison you need
 138.copy-list-with-random-pointer.py - done with a hint, redo and think about what data structure to use, also why is it impossible to use another data structure? think about how you can identify what Node points to which other objects, using the val wont work, why?
 143.reorder-list.py - got it but pretty ineffiecient, think of the easiest way to find the middle of a linked list, think of another problem where you found kth element counted from the end
