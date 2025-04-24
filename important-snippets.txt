@@ -24,3 +24,7 @@ string.digits
 > '0123456789'
 string.hexdigits
 > '0123456789abcdefABCDEF'
+
+# nice helper function to remember - sum!
+arr = [4,6,7,2,6]
+sum(arr)
