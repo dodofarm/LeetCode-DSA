@@ -21,12 +21,15 @@ repeate one more time:
 226.invert-binary-tree.py - same as 104, figured out technique but maybe no need for helper function? Just call the main function.
 875.koko-eating-bananas.py - figured out after tip, remember how binary search works and WHAT you are searching for in this quesiton, set the lowest, highest points for binary search correctly
 1448.count-good-nodes-in-binary-tree.py - got it after looking at a tip, retry both - recursive and iterative solution.
+1470.shuffle-the-array.py - easy, solved - there's a more complex bitshift solution where you store 2 values in one int, maybe attempt to do that
 
 Done:
 2.add-two-numbers.py - done but not good time and non-efficiencies in code - think how you can write cleaner/smarter and shorter, remove unnessecary lines
 19.remove-nth-node-from-end-of-list.py - done but code might want some optimizations (unnessecary None checks etc.)
 20.valid-parentheses.py - done on second try, might repeat since there is a nice concept on how to compare values
 21.merge-two-sorted-lists.py - done, maybe repeat for understanding
+26.remove-duplicates-from-sorted-array.py - solved perfectly, some small hiccups like unnessecary variables etc.
+27.remove-element.py - done perfectly, small issues like unnessecary variables
 74.search-a-2d-matrix.py - done with no issues, maybe repeat for understanding of binary search application?
 102.binary-tree-level-order-traversal.py - done with little to no issues, maybe repeat to understand some logic stuff - edit: redone with BFS, maybe repeat to understand dequeue BFS
 104.maximum-depth-of-binary-tree.py - done with recursive DFS and stack DFS, redo stack solution potentially to solidify stack technique
@@ -37,4 +40,6 @@ Done:
 344.reverse-string.py - done, not really worth repeating unless for basic techniques
 438.find-all-anagrams-in-a-string.py - done on first try - very similar to 567, maybe repeat with better implementation
 643.maximum-average-subarray-i.py - done on first try - maybe repeat to solidify static size sliding window
+682.baseball-game.py - done perfectly on first try
 704.binary-search.py - done, maybe repeat to practice binary search but other problems probably are enough for that
+1929.concatenation-of-array.py - no need to repeat, very simple

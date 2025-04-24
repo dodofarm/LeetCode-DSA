@@ -1,6 +1,3 @@
-from typing import Optional
-
-
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -10,9 +7,7 @@ class ListNode:
 
 # @leet start
 class Solution:
-    def mergeTwoLists(
-        self, list1: Optional[ListNode], list2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+    def mergeTwoLists(self, list1: ListNode, list2: ListNode) -> ListNode:
         dummy = ListNode()
         node = dummy
         while list1 and list2:
@@ -33,4 +28,3 @@ class Solution:
 
 
 # @leet end
-
