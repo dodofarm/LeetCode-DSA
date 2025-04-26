@@ -3,6 +3,7 @@ General:
   when optimizing at the end, think about how to move out the logic that checks only one small thing out of the while/for loop and just have a simple if condition at the end
   sometimes you add unnecessary variables that aren't actually needed, take a look if you really need them or if you can optimize them away.
   maybe replace while loops with for, sometimes that's just better and easier most likely this would apply where you use one or two pointers.
+  write out the start and result of an example this might help you get the answer!
 Sliding window:
   you might need to fill up the window first!
   if the window size is constant, simply have 1 pointer that's the end of the window and do end of window - size the of the window = beginning of window. Now just use a for loop instead of a while loop.
