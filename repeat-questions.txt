@@ -44,4 +44,5 @@ Done:
 643.maximum-average-subarray-i.py - done on first try - maybe repeat to solidify static size sliding window
 682.baseball-game.py - done perfectly on first try
 704.binary-search.py - done, maybe repeat to practice binary search but other problems probably are enough for that
+1472.design-browser-history.py - solved with linked list, maybe reattempt but this time use an array?
 1929.concatenation-of-array.py - no need to repeat, very simple
