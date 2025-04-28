@@ -26,3 +26,13 @@ Stack:
 Recursion:
   Build from the bottom up, instea of passing down a parameter to the lower functions, this is much simpler. E.g. the last call stack return 1, the one before 2 etc. It would look like `return this_funciton() + 1`
   https://www.perplexity.ai/search/def-maxdepth-node-treenode-ans-8OlebG6VTg2M292p36Ywmg
+
+Multithreading & Multiprocessingin Python:
+  python in itself is not multithreaded due to something called global interpreter lock. The interpreter will wait for one task to finish before working on other tasks. To use multithreading you can import `threading`.  
+  in python 1 process can only execute 1 thread at a time, they are concurrent but NOT parallel
+  
+  some extension modules, either standard or third-party, are designed so as to release the GIL when doing computationally-intensive tasks such as compression or hashing. Also, the GIL is always released when doing I/O.
+  very good video on multiprocessing vs multiprocessing in python: https://www.youtube.com/watch?v=AZnGRKFUU0c
+
+video on synchronous vs asynchronous vs multithreading vs multiprocessing https://www.youtube.com/watch?v=0vFgKr5bjWI
+
