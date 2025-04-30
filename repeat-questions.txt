@@ -13,6 +13,7 @@
 repeate one more time:
 3.longest-substring-without-repeating-characters.py - done but took too long and had unnessecary code (not optimized)
 98.validate-binary-search-tree.py - solved with a tip, try again. If you've found the conditions for a BST, try to simplify them to something managable
+100.same-tree.py - solved but with big problems - should be easy. Just simplify, no need to do null checks, it's just as fast to do that in a recursive call and return immediately.
 121.best-time-to-buy-and-sell-stock.py - done with hint, simple question - understand what you are measuring and which simple comparison you need
 138.copy-list-with-random-pointer.py - done with a hint, redo and think about what data structure to use, also why is it impossible to use another data structure? think about how you can identify what Node points to which other objects, using the val wont work, why?
 143.reorder-list.py - got it but pretty ineffiecient, think of the easiest way to find the middle of a linked list, think of another problem where you found kth element counted from the end
