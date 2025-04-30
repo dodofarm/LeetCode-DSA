@@ -23,7 +23,7 @@ repeate one more time:
 226.invert-binary-tree.py - same as 104, figured out technique but maybe no need for helper function? Just call the main function.
 235.lowest-common-ancestor-of-a-binary-search-tree.py - solved but solution was not most efficient, think about the core idea of what the path before the split is, just follow it.
 875.koko-eating-bananas.py - figured out after tip, remember how binary search works and WHAT you are searching for in this quesiton, set the lowest, highest points for binary search correctly
-1448.count-good-nodes-in-binary-tree.py - got it after looking at a tip, retry both - recursive and iterative solution.
+1448.count-good-nodes-in-binary-tree.py - got it after looking at a tip TWICE, try again a third time! retry both - recursive and iterative solution. This about what information should be on the call stack and how to pass it down/modify it.
 1470.shuffle-the-array.py - easy, solved - there's a more complex bitshift solution where you store 2 values in one int, maybe attempt to do that
 
 Done:

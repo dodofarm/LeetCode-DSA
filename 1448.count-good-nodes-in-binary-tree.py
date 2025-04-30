@@ -6,7 +6,7 @@ class TreeNode:
         self.right = right
 
 
-# Recursive Solution
+# Recursive Solution - doesn't look elegant, the last one does!
 class Solution_one:
     def goodNodes(self, root: TreeNode) -> int:
         def _goodNodes(node: TreeNode, max_value: int) -> int:
@@ -18,10 +18,7 @@ class Solution_one:
         return _goodNodes(root, root.val)
 
 
-# @leet start
-
-
-class Solution:
+class Solution_two:
     def goodNodes(self, root: TreeNode) -> int:
         ans = 0
         stack: list[tuple[TreeNode, int]] = [(root, root.val)]
@@ -35,6 +32,25 @@ class Solution:
             if node.val >= value:
                 ans += 1
         return ans
+
+
+# @leet start
+
+
+class Solution:
+    def goodNodes(self, root: TreeNode) -> int:
+        def dfs(node: TreeNode, max_path) -> int:
+            ans = 0
+            if node.val >= max_path:
+                ans += 1
+            max_path = max(max_path, node.val)
+            if node.left:
+                ans += dfs(node.left, max_path)
+            if node.right:
+                ans += dfs(node.right, max_path)
+            return ans
+
+        return dfs(root, root.val)
 
 
 # @leet end
