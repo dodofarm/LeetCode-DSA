@@ -4,7 +4,6 @@
 215.kth-largest-element-in-an-array.py - Quickselect practice, optional max heap or just sort
 283.move-zeroes.py - Think about how to partition the array, what needs to be at the beginning? Maybe move it there
 347.top-k-frequent-elements.py - Bucket Sort, find highest frequency
-49.group-anagrams.py - never done properly... 
 125.valid-palindrome.py - think about how you DON'T have to move both pointers before comparing, you can do so 1 by 1!
 219.contains-duplicate-ii.py - Solved but not optimal think of which TECHNIQUE to use, hashmap is only part of it
 15.3sum.py - didn't solve this one, think of 2sum and 2sum II
@@ -33,6 +32,7 @@ Done:
 21.merge-two-sorted-lists.py - done, maybe repeat for understanding
 26.remove-duplicates-from-sorted-array.py - solved perfectly, some small hiccups like unnessecary variables etc.
 27.remove-element.py - done perfectly, small issues like unnessecary variables
+49.group-anagrams.py - done with sort and non-sort approach - maybe retry without coding to come up with non code appraoch
 74.search-a-2d-matrix.py - done with no issues, maybe repeat for understanding of binary search application?
 102.binary-tree-level-order-traversal.py - done with little to no issues, maybe repeat to understand some logic stuff - edit: redone with BFS, maybe repeat to understand dequeue BFS
 104.maximum-depth-of-binary-tree.py - done with recursive DFS and stack DFS, redo stack solution potentially to solidify stack technique
