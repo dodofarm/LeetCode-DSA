@@ -15,6 +15,7 @@ repeate one more time:
 100.same-tree.py - solved but with big problems - should be easy. Just simplify, no need to do null checks, it's just as fast to do that in a recursive call and return immediately.
 121.best-time-to-buy-and-sell-stock.py - done with hint, simple question - understand what you are measuring and which simple comparison you need
 143.reorder-list.py - got it but pretty ineffiecient, think of the easiest way to find the middle of a linked list, think of another problem where you found kth element counted from the end
+146.lru-cache.py - got the technique after a hint, good question - repeat one more time. Make sure to create helper functions if needed and to check the logic, debugging can be very hard.
 150.evaluate-reverse-polish-notation.py - done but the technique how and when to order numbers to stack should be revised
 189.rotate-array.py - solved but no O(1) space complexity, hard to come up with technique write the start and result and retry maybe
 205.isomorphic-strings.py - solved once with hint, you need to compare one string with the other AND vice versa
