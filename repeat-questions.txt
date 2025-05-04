@@ -28,6 +28,8 @@ repeate one more time:
 
 Done:
 2.add-two-numbers.py - done but not good time and non-efficiencies in code - think how you can write cleaner/smarter and shorter, remove unnessecary lines
+12.integer-to-roman.py - solved basically without issues, had small issue which was fixed after one test run. Recalculate your maths!
+13.roman-to-integer.py - solved with basically no problems, always draw out the problem first!
 19.remove-nth-node-from-end-of-list.py - done but code might want some optimizations (unnessecary None checks etc.)
 20.valid-parentheses.py - done on second try, might repeat since there is a nice concept on how to compare values
 21.merge-two-sorted-lists.py - done, maybe repeat for understanding
