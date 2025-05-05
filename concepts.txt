@@ -16,6 +16,9 @@ Quicksort/Quickselect:
 Bucket Sort:
   useful for finding highest (or kth highest frequency in array)
 
+Pointers:
+  Generally you will use a while loop to progress the pointers. When you do that it's not the same as with a sliding window where it needs to be filled up first. In the loop do the calculation first and THEN progress one pointer or the other (if you use 2 pointers).
+
 Linked List:
   need THREE pointers to reverse it
   VERY often a dummy node is good! You can use it as a placeholder when you build a list to the retun dummy.next (e.g. problem 2)
