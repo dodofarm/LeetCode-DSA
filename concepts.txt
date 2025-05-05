@@ -27,6 +27,8 @@ Recursion:
   Build from the bottom up, instea of passing down a parameter to the lower functions, this is much simpler. E.g. the last call stack return 1, the one before 2 etc. It would look like `return this_funciton() + 1`
   https://www.perplexity.ai/search/def-maxdepth-node-treenode-ans-8OlebG6VTg2M292p36Ywmg
 
+  when using a recursive algorithm like DFS, try to make the basecase 0/None, and don't check for things like `if node.left` this only clutters the code and has no benefit really since the if check is the same as just returning immediately at the top of the recursive function `e.g. if node is none:`.
+
 Multithreading & Multiprocessingin Python:
   python in itself is not multithreaded due to something called global interpreter lock. The interpreter will wait for one task to finish before working on other tasks. To use multithreading you can import `threading`.  
   in python 1 process can only execute 1 thread at a time, they are concurrent but NOT parallel
