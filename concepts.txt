@@ -4,6 +4,8 @@ General:
   sometimes you add unnecessary variables that aren't actually needed, take a look if you really need them or if you can optimize them away.
   maybe replace while loops with for, sometimes that's just better and easier most likely this would apply where you use one or two pointers.
   write out the start and result of an example this might help you get the answer!
+  When checking whether a char is within a range of characters (e.g. is a character alphanumeric) you don't have to rely on inbuilt `isalnum` and the like, simply check whether the characters ASCII value is within your bounds. E.g. `ord('a') <= char <= ord('z')` for lowercase letters.
+
 Sliding window:
   you might need to fill up the window first!
   if the window size is constant, simply have 1 pointer that's the end of the window and do end of window - size the of the window = beginning of window. Now just use a for loop instead of a while loop.

@@ -4,7 +4,6 @@
 215.kth-largest-element-in-an-array.py - Quickselect practice, optional max heap or just sort
 283.move-zeroes.py - Think about how to partition the array, what needs to be at the beginning? Maybe move it there
 347.top-k-frequent-elements.py - Bucket Sort, find highest frequency
-125.valid-palindrome.py - think about how you DON'T have to move both pointers before comparing, you can do so 1 by 1!
 219.contains-duplicate-ii.py - Solved but not optimal think of which TECHNIQUE to use, hashmap is only part of it
 15.3sum.py - didn't solve this one, think of 2sum and 2sum II
 567.permutation-in-string.py - got non-linear time solution, keep in mind exactly HOW sliding windows work (pop, add per move)
@@ -16,6 +15,7 @@ repeate one more time:
 100.same-tree.py - solved but with big problems - should be easy. Just simplify, no need to do null checks, it's just as fast to do that in a recursive call and return immediately.
 110.balanced-binary-tree.py - solved correctly but not quickly enough, repeat one more time and keep in mind what the base case should be and what algo to use.
 121.best-time-to-buy-and-sell-stock.py - done with hint, simple question - understand what you are measuring and which simple comparison you need
+125.valid-palindrome.py - solved, maybe retry next time without using `.isalnum()` python function. How can you determine whether a char is within a range of chars? There's some nice trick that would involve `<=`.
 143.reorder-list.py - got it but pretty ineffiecient, think of the easiest way to find the middle of a linked list, think of another problem where you found kth element counted from the end
 146.lru-cache.py - got the technique after a hint, good question - repeat one more time. Make sure to create helper functions if needed and to check the logic, debugging can be very hard.
 150.evaluate-reverse-polish-notation.py - done but the technique how and when to order numbers to stack should be revised
