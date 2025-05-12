@@ -27,6 +27,7 @@ repeate one more time:
 875.koko-eating-bananas.py - figured out after tip, remember how binary search works and WHAT you are searching for in this quesiton, set the lowest, highest points for binary search correctly
 1448.count-good-nodes-in-binary-tree.py - got it after looking at a tip TWICE, try again a third time! retry both - recursive and iterative solution. This about what information should be on the call stack and how to pass it down/modify it.
 1470.shuffle-the-array.py - easy, solved - there's a more complex bitshift solution where you store 2 values in one int, maybe attempt to do that
+2873.maximum-value-of-an-ordered-triplet-i.py - solved with hint for O(n^3) solution. After learning greedy algorithms retry.
 
 Done:
 2.add-two-numbers.py - done but not good time and non-efficiencies in code - think how you can write cleaner/smarter and shorter, remove unnessecary lines
