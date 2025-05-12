@@ -39,6 +39,7 @@ Done:
 26.remove-duplicates-from-sorted-array.py - solved perfectly, some small hiccups like unnessecary variables etc.
 27.remove-element.py - done perfectly, small issues like unnessecary variables
 49.group-anagrams.py - done with sort and non-sort approach - maybe retry without coding to come up with non code appraoch
+58.length-of-last-word.py - solved, maybe repeat to actually use while loop and use good conditions in while loop instead of for loops with if statements.
 74.search-a-2d-matrix.py - done with no issues, maybe repeat for understanding of binary search application?
 102.binary-tree-level-order-traversal.py - done with little to no issues, maybe repeat to understand some logic stuff - edit: redone with BFS, maybe repeat to understand dequeue BFS
 104.maximum-depth-of-binary-tree.py - done with recursive DFS and stack DFS, redo stack solution potentially to solidify stack technique
