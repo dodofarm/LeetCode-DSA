@@ -24,6 +24,7 @@ Pointers:
 Linked List:
   need THREE pointers to reverse it
   VERY often a dummy node is good! You can use it as a placeholder when you build a list to the retun dummy.next (e.g. problem 2)
+  Use `node.next.next = node` to point the next node to oneself. Is in general good to keep `next.next` in mind. Can also be used to delete a node. E.g. `node.next = node.next.next`
 
 Stack:
   think about the ORDER of how items get placed on the stack. Also think about how you can store items temporary where the order should stay the same (see 150)
@@ -33,6 +34,15 @@ Recursion:
   https://www.perplexity.ai/search/def-maxdepth-node-treenode-ans-8OlebG6VTg2M292p36Ywmg
 
   when using a recursive algorithm like DFS, try to make the basecase 0/None, and don't check for things like `if node.left` this only clutters the code and has no benefit really since the if check is the same as just returning immediately at the top of the recursive function `e.g. if node is none:`.
+
+  Normally it's better to use iterative to get more control and avoid limitations (e.g. call stack size) but recursive solutions are sometimes easier to read.
+  When converting, you most likely will have to create a stack to simulate a call stack, unless it's a tail-recursive function (recursive call happens at the end), in that case it could be most likely converted into a simple for-loop.
+  If it's not tail-recursive you would need to use a stack and while loops to simulate the flow, the base case could be a CONDITION of a loop. E.g.:
+    while node:
+      stack.append(node) 
+      node = node.left
+
+  Here the basecase of a recursive function (e.g. if node is None: return) is the condition of the while loop. For more details go to LC94.
 
 Multithreading & Multiprocessingin Python:
   python in itself is not multithreaded due to something called global interpreter lock. The interpreter will wait for one task to finish before working on other tasks. To use multithreading you can import `threading`.  
