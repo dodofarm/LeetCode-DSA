@@ -11,7 +11,10 @@ class Node:
         self.random = random
 
 
-class Solution_one:
+# @leet start
+
+
+class Solution:
     def copyRandomList(self, head: "Optional[Node]") -> "Optional[Node]":
         if head is None:
             return None
@@ -30,25 +33,4 @@ class Solution_one:
         return pairs[head]
 
 
-# @leet start
-
-
-class Solution:
-    def copyRandomList(self, head: "Optional[Node]") -> "Optional[Node]":
-        if head is None:
-            return None
-        mapping: dict[Node, Node] = {}
-
-        node: Optional[Node] = head
-        while node:
-            mapping[node] = Node(node.val)
-            node = node.next
-
-        for old_node, new_node in mapping.items():
-            new_node.next = mapping[old_node.next] if old_node.next else None
-            new_node.random = mapping[old_node.random] if old_node.random else None
-
-        return mapping[head]
-
-
-# @leet en
+# @leet end

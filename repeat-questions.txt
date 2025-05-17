@@ -1,4 +1,4 @@
-169.majority-element.py - Boyer Moore Algorithm, voting
+166.majority-element.py - Boyer Moore Algorithm, voting
 151.reverse-words-in-a-string.py - never done/understood fully
 1540.can-convert-string-in-k-moves.py - String conversion
 215.kth-largest-element-in-an-array.py - Quickselect practice, optional max heap or just sort
@@ -21,13 +21,17 @@ repeate one more time:
 150.evaluate-reverse-polish-notation.py - done but the technique how and when to order numbers to stack should be revised
 189.rotate-array.py - solved but no O(1) space complexity, hard to come up with technique write the start and result and retry maybe
 205.isomorphic-strings.py - solved once with hint, you need to compare one string with the other AND vice versa
+206.reverse-linked-list.py - Solved on second try (remember to use multiple vars, not one!). Solved with recursion. Attempt again but this time no helper function! Theres a nice technique to make the current nodes next node to point to oneselve or somewhere else.
+223.implement-stack-using-queues.py - solved with hint. Don't assume the time complexity should be the of the classical stack (O(1)), instead think about how to most efficiently reduce the complexity so that it happens as infrequent as possible (only on push or only on pop?)
 226.invert-binary-tree.py - same as 104, figured out technique but maybe no need for helper function? Just call the main function.
+230.kth-smallest-element-in-a-bst.py - didn't solve it, repeat DFS, BFS, how first order traversal/post order traversal etc. work and can be achieved
 235.lowest-common-ancestor-of-a-binary-search-tree.py - solved but solution was not most efficient, think about the core idea of what the path before the split is, just follow it.
 383.ransom-note.py - solved without major issues besides some syntax errors, maybe repeat to practice anagrams and such
 875.koko-eating-bananas.py - figured out after tip, remember how binary search works and WHAT you are searching for in this quesiton, set the lowest, highest points for binary search correctly
 1448.count-good-nodes-in-binary-tree.py - got it after looking at a tip TWICE, try again a third time! retry both - recursive and iterative solution. This about what information should be on the call stack and how to pass it down/modify it.
 1470.shuffle-the-array.py - easy, solved - there's a more complex bitshift solution where you store 2 values in one int, maybe attempt to do that
 2873.maximum-value-of-an-ordered-triplet-i.py - solved with hint for O(n^3) solution. After learning greedy algorithms retry.
+1700.number-of-students-unable-to-eat-lunch.py - solved without problems, repeat one more time with dict and use a Counter to practice these. Will make the code cleaner!
 
 Done:
 2.add-two-numbers.py - done but not good time and non-efficiencies in code - think how you can write cleaner/smarter and shorter, remove unnessecary lines
@@ -47,7 +51,6 @@ Done:
 155.min-stack.py - done, remember CORE idea about how stack works! think of how to store the min value for the current element
 167.two-sum-ii-input-array-is-sorted.py - actually solved without problems, might retry to refresh
 199.binary-tree-right-side-view.py - done with custom recursive solution as in 102 (recursive) - also now redone with BFS + deque
-206.reverse-linked-list.py - Solved on second try (remember to use multiple vars, not one!) maybe as training to recursive solution
 242.valid-anagram.py - Solved with array and using ord() to get ACII value. 
 344.reverse-string.py - done, not really worth repeating unless for basic techniques
 438.find-all-anagrams-in-a-string.py - done on first try - very similar to 567, maybe repeat with better implementation
