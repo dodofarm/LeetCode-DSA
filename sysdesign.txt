@@ -1,0 +1,15 @@
+cache types - https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/
+
+To read:
+scaling memcache at facebook
+
+
+Redis and ratelimit:
+  ratelimiting algos:
+    Token bucket (specifically Token bucket with incremental refill, refill bucket with token consistently e.g. 1 token every 10s. 1 req consumes 1 token, if no tokens are left the request is dropped. This would you 6 RPM but no double bursts on edges)
+    Leaking bucket (queue that can hold a specific amount of requests and not more, if Q is full requests are dropped. You can adjust the RPS of requests leaving Q and size of Q. Will produce consistent RPS to backend)
+    Fixed window counter algorithm (every minute a set of requests is allowed and reset every start of a minute, can cause double burst at edges of time frames)
+    sliding window log algorithm, write the timestamp of a req to a log file and if the following requests exceed the amount of RPS allowed in a rolling window (calculated starting from the first request logged) they get dropped. Any time a new req comes in, old request that are before curr_req_timestamp - my_limit_period are removed. Is very accurate for rolling window RPS but heavy on memory to keep the log file. (there's also a modification called sliding window counter algorithm)
+
+  To avoid the need of thread locking due to race conditions consider using the ability of Redis to run Lua scripts server-side or use Redis sorted sets.
+  https://www.perplexity.ai/search/this-is-a-paragraph-about-rate-_BPdCc4QSI6735H4hKJSeQ
