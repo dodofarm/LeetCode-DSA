@@ -6,6 +6,8 @@ General:
   write out the start and result of an example this might help you get the answer!
   When checking whether a char is within a range of characters (e.g. is a character alphanumeric) you don't have to rely on inbuilt `isalnum` and the like, simply check whether the characters ASCII value is within your bounds. E.g. `ord('a') <= char <= ord('z')` for lowercase letters.
 
+  when you have a loop and you are trying to find min/max of something, set the ans variable to 0 in the beginning and calculate the min/max at the beginning of the loop, not the end. This way you don't need to put the calculation for the first iteration before the loop (the definition of the variable) see LC11.
+
 Sliding window:
   you might need to fill up the window first!
   if the window size is constant, simply have 1 pointer that's the end of the window and do end of window - size the of the window = beginning of window. Now just use a for loop instead of a while loop.
@@ -25,6 +27,7 @@ Linked List:
   need THREE pointers to reverse it
   VERY often a dummy node is good! You can use it as a placeholder when you build a list to the retun dummy.next (e.g. problem 2)
   Use `node.next.next = node` to point the next node to oneself. Is in general good to keep `next.next` in mind. Can also be used to delete a node. E.g. `node.next = node.next.next`
+  If you need to iterate over two or more lists and check for a condition if one of the lists is shorter than the others, simply append the remainder of the list to the end of the current list you created. See LC21 for an example.
 
 Stack:
   think about the ORDER of how items get placed on the stack. Also think about how you can store items temporary where the order should stay the same (see 150)
@@ -44,6 +47,9 @@ Recursion:
 
   Here the basecase of a recursive function (e.g. if node is None: return) is the condition of the while loop. For more details go to LC94.
 
+  Use the @cache decorator from the functools library if you have a recursive funciton that calls itself with the same input multiple times (a decorator is just code that is injected either before or after your actual function code) it will automatically memoize duplicate calls. 
+  What's a decorator? https://www.perplexity.ai/search/this-doesn-t-seem-to-work-cach-T77xnlAEQ2SdgQ0wW9UgyQ
+
 Multithreading & Multiprocessingin Python:
   python in itself is not multithreaded due to something called global interpreter lock. The interpreter will wait for one task to finish before working on other tasks. To use multithreading you can import `threading`.  
   in python 1 process can only execute 1 thread at a time, they are concurrent but NOT parallel
@@ -53,3 +59,18 @@ Multithreading & Multiprocessingin Python:
 
 video on synchronous vs asynchronous vs multithreading vs multiprocessing https://www.youtube.com/watch?v=0vFgKr5bjWI
 
+Object oriented programming in python:
+  Use decorators like @classmethod, @staticmethod or @dataclass to give your methods more functionality.
+    
+  Need more research in all of these, high level:
+    @classmethod:
+      A method that will receive the class as it's first argument and not the instance. Basically can be used as an alternative constructor/factory method and allows to define multiple ways to create a class instead of just `__init__`. 
+
+    @staticmethod:
+      A method that doesn't require an instance of the class to function. E.g. the "add" function of a Math class, unless the math class instantiates a specific number object, the method itself doesn't require an instance of the class to function properly for example on 2 integers. For organizational reasons you can define it under that class.
+
+    @dataclass:
+      Provides boilerplate code that automatically generates special methods for classes that are mainly used to store data, such as __init__, __repr__, and __eq__. It will analyze your class definition fields (with type annotations) and generate the appropriate magic methods. For example you can just specify the attributes and @dataclass will generate the __init__ method for you.
+
+    @attrs:
+      @dataclass seems to inherit from @attrs. Look into it!
