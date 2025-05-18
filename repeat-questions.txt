@@ -9,8 +9,6 @@
 567.permutation-in-string.py - got non-linear time solution, keep in mind exactly HOW sliding windows work (pop, add per move)
 
 repeate one more time:
-3.longest-substring-without-repeating-characters.py - done but took too long and had unnessecary code (not optimized)
-11.container-with-most-water.py - solved with a hint - try again, remember parantheses in maths and try not to overcomplicate, very similar to LC121.
 98.validate-binary-search-tree.py - solved with a tip, try again. If you've found the conditions for a BST, try to simplify them to something managable
 100.same-tree.py - solved but with big problems - should be easy. Just simplify, no need to do null checks, it's just as fast to do that in a recursive call and return immediately.
 110.balanced-binary-tree.py - solved correctly but not quickly enough, repeat one more time and keep in mind what the base case should be and what algo to use.
@@ -27,6 +25,9 @@ repeate one more time:
 230.kth-smallest-element-in-a-bst.py - didn't solve it, repeat DFS, BFS, how first order traversal/post order traversal etc. work and can be achieved
 235.lowest-common-ancestor-of-a-binary-search-tree.py - solved but solution was not most efficient, think about the core idea of what the path before the split is, just follow it.
 383.ransom-note.py - solved without major issues besides some syntax errors, maybe repeat to practice anagrams and such
+509.fibonacci-number.py - solved iteratively and recursively but forgot the math. Try again without looking up the fibonacci sequence.
+543.diameter-of-binary-tree.py - solved it basically perfectly but the last small mathematical step was missing, think about how to traverse each node and what exactly do you want to record to return later it's not the height of the tree, that's just what the nested function returns not the "main" function. Try again!
+704.binary-search.py - done once but forgot, retry one more time - memorize the algo. Especially what's the condition for the iteration?
 875.koko-eating-bananas.py - figured out after tip, remember how binary search works and WHAT you are searching for in this quesiton, set the lowest, highest points for binary search correctly
 1448.count-good-nodes-in-binary-tree.py - got it after looking at a tip TWICE, try again a third time! retry both - recursive and iterative solution. This about what information should be on the call stack and how to pass it down/modify it.
 1470.shuffle-the-array.py - easy, solved - there's a more complex bitshift solution where you store 2 values in one int, maybe attempt to do that
@@ -34,12 +35,14 @@ repeate one more time:
 1700.number-of-students-unable-to-eat-lunch.py - solved without problems, repeat one more time with dict and use a Counter to practice these. Will make the code cleaner!
 
 Done:
+3.longest-substring-without-repeating-characters.py - done but took too long and had unnessecary code (not optimized), solved without issues on second try, maybe redo - very nice usage of sets.
 2.add-two-numbers.py - done but not good time and non-efficiencies in code - think how you can write cleaner/smarter and shorter, remove unnessecary lines
+11.container-with-most-water.py - solved with a hint. Solved without hint on second try. Remember parantheses and don't overcomplicate! very similar to 121.
 12.integer-to-roman.py - solved basically without issues, had small issue which was fixed after one test run. Recalculate your maths!
 13.roman-to-integer.py - solved with basically no problems, always draw out the problem first!
 19.remove-nth-node-from-end-of-list.py - done but code might want some optimizations (unnessecary None checks etc.)
 20.valid-parentheses.py - done on second try, might repeat since there is a nice concept on how to compare values
-21.merge-two-sorted-lists.py - done, maybe repeat for understanding
+21.merge-two-sorted-lists.py - done twice without issues, maybe repeat for understanding? Nice concept is dummy nodes and how to optimize when you already found the solution (just append the linked list)
 26.remove-duplicates-from-sorted-array.py - solved perfectly, some small hiccups like unnessecary variables etc.
 27.remove-element.py - done perfectly, small issues like unnessecary variables
 49.group-anagrams.py - done with sort and non-sort approach - maybe retry without coding to come up with non code appraoch
@@ -56,6 +59,5 @@ Done:
 438.find-all-anagrams-in-a-string.py - done on first try - very similar to 567, maybe repeat with better implementation
 643.maximum-average-subarray-i.py - done on first try - maybe repeat to solidify static size sliding window
 682.baseball-game.py - done perfectly on first try
-704.binary-search.py - done, maybe repeat to practice binary search but other problems probably are enough for that
 1472.design-browser-history.py - solved with linked list, maybe reattempt but this time use an array?
 1929.concatenation-of-array.py - no need to repeat, very simple
