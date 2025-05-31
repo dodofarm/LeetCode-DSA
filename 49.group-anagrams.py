@@ -20,7 +20,7 @@ class Solution_two:
     def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
         ans: dict[str, list[str]] = {}
         for i in strs:
-            sorted_i = "".join(sorted(i))
+            sorted_i = "".join(sorted(i))  # Could also be a tuple!
             if sorted_i in ans:
                 ans[sorted_i].append(i)
             else:
